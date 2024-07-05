@@ -24,6 +24,11 @@
 				</div>
                 <form method="POST" action="/profiles?/delete">
                 <input type="hidden" name="id" id="id" value={user.id}>
+				<a href={`/profiles/edit/${user.id}?name=${encodeURIComponent(user.name)}&email=${encodeURIComponent(user.email)}`}>
+                        <button>
+                            <img class="w-4" src="./edit.svg" alt="edit"/>
+                        </button>
+                </a>
                 <button type="submit">
                     <img class="w-4 float-right" src="./trash-can.svg" alt="delete"/>
                 </button>
