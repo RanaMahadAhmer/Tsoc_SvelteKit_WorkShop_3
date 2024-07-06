@@ -4,5 +4,7 @@
             "type": "add",
             "pluginName": "fleet.javascript.ai"
         }
-    ]
+    ],
+    "autoSave": "AfterDelay",
+    "nodejs.editor.formatOnSave.prettier.mode": "Enabled"
 }

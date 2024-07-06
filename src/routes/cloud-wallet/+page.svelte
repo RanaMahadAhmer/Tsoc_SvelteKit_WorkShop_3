@@ -47,6 +47,6 @@
         </div>
     </form>
     {#if form?.success}
-        <p class="pt-2">Logged In</p>
+        <p class="pt-2">Logged In. Your Balance is {form?.data}</p>
     {/if}
 </div>
