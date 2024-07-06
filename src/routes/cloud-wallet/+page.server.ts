@@ -67,6 +67,7 @@ export const actions = {
 
         // const xPubKeys = await walletModule.getXPubKeys({ walletId: walletCreation1.walletID });
         // console.log(xPubKeys);
+//        ?
 
 
         return {success: true, data: DefaultWalletBalance['data']['balance']['summary']};
