@@ -28,7 +28,7 @@
   "type": "module",
   "dependencies": {
     "@vercel/postgres": "^0.9.0",
-    "neucron-sdk": "2.18.2",
+    "neucron-sdk": "^0.2.1",
     "neucron-signer": "^1.3.2",
     "scrypt-ts": "^1.3.31"
   }
