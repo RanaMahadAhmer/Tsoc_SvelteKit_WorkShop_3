@@ -1,6 +1,6 @@
 // import { error } from '@sveltejs/kit';
 import {createPool, sql} from '@vercel/postgres'
-import {POSTGRES_URL} from '$env/static/private'
+import {POSTGRES_URL} from '$env/dynamic/private'
 
 export async function load() {
     const db = createPool({connectionString: POSTGRES_URL})
