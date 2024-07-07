@@ -127,10 +127,14 @@
             </button>
         </div>
     </form>
-    {#if form?.success && form?.send}
-        <p class="pt-2">Transaction Successful: <a style="color: blue"
-                                                   target="_blank"
-                                                   href='https://whatsonchain.com/tx/{form?.tx}'>Transaction Link!</a>
+    <!--//    {#if form?.success && form?.send}-->
+    <!--//        <p class="pt-2">Transaction Successful: <a style="color: blue"-->
+    <!--//                                                   target="_blank"-->
+    <!--//                                                   href='https://whatsonchain.com/tx/{form?.tx}'>Transaction Link!</a>-->
+    <!--//        </p>-->
+    <!--//    {/if}-->
+    {#if form?.success}
+        <p class="pt-2">Transaction Successful:
         </p>
     {/if}
 

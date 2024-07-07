@@ -1,4 +1,4 @@
-import {NeucronSDK} from "neucron-sdk";
+//import NeucronSDK from "neucron-sdk";
 
 
 export const actions = {
@@ -9,18 +9,19 @@ export const actions = {
         console.log(id);
         console.log(password);
 
-        const neucron = new NeucronSDK();
-
-        const authModule = neucron.authentication;
-        const walletModule = neucron.wallet;
-
-        const loginResponse = await authModule.login({email: id, password: password});
-        console.log(loginResponse);
-
-        const DefaultWalletBalance = await walletModule.getWalletBalance({});
-        console.log(DefaultWalletBalance);
-
-        return {success: true, login: true, data: DefaultWalletBalance['data']['balance']['summary']};
+//        const neucron = new NeucronSDK();
+//
+//        const authModule = neucron.authentication;
+//        const walletModule = neucron.wallet;
+//
+//        const loginResponse = await authModule.login({email: id, password: password});
+//        console.log(loginResponse);
+//
+//        const DefaultWalletBalance = await walletModule.getWalletBalance({});
+//        console.log(DefaultWalletBalance);
+//
+//        return {success: true, login: true, data: DefaultWalletBalance['data']['balance']['summary']};
+        return {success: true};
     },
 //    send: async ({request}) => {
 //        const [data] = await Promise.all([request.formData()]);
