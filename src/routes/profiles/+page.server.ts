@@ -1,6 +1,6 @@
 // import { error } from '@sveltejs/kit';
 import {createPool, sql} from '@vercel/postgres'
-import {POSTGRES_URL} from '$env/dynamic/private'
+import {POSTGRES_URL} from '$env/static/private'
 
 export async function load() {
     const db = createPool({connectionString: POSTGRES_URL})
@@ -84,7 +84,7 @@ export const actions = {
             FROM names
             WHERE id = ${id};`
 
-        return {success: true};
+        return {success: true, delete: true};
     },
 
     create: async ({request}) => {
@@ -99,7 +99,7 @@ export const actions = {
             INSERT INTO names (name, email)
             VALUES (${name}, ${email}) ON CONFLICT (email) DO NOTHING;
         `
-        return {success: true};
+        return {success: true, create: true};
     }
 };
 
