@@ -47,10 +47,10 @@
                 Deploy Bounty
             </button>
         </div>
-        {#if form?.success}
+        {#if form?.success && form?.deploy}
             <p class="pt-2">Bounty Deployed Successfully: <a style="color: blue"
                                                              target="_blank"
-                                                             href='https://whatsonchain.com/tx/{form?.tx}'>Transaction
+                                                             href='https://whatsonchain.com/tx/{form?.tx}'>WhatsOnChain Transaction
                 Link!</a>
             </p>
         {/if}
@@ -85,10 +85,11 @@
                 Unlock Bounty
             </button>
         </div>
-        {#if form?.success}
+
+        {#if form?.success && form?.unlock}
             <p class="pt-2">Bounty Unlocked Successfully: <a style="color: blue"
                                                              target="_blank"
-                                                             href='https://whatsonchain.com/tx/{form?.tx}'>Transaction
+                                                             href='https://whatsonchain.com/tx/{form?.tx}'>WhatsOnChain Transaction
                 Link!</a>
             </p>
         {/if}
