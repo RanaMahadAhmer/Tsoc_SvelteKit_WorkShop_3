@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "preinstall": "npx scrypt-cli@latest compile && npx svelte-kit upgrade",
+    "postnstall": "npx scrypt-cli@latest compile",
 
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
