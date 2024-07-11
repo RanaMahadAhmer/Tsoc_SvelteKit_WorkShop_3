@@ -1,16 +1,16 @@
-//import {DefaultProvider, bsv} from 'scrypt-ts';
-//import {Root} from "../../contracts/root";
-//import {NeucronSigner} from 'neucron-signer';
+// import {DefaultProvider, bsv} from 'scrypt-ts';
+// import {Root} from "../../contracts/root";
+// import {NeucronSigner} from 'neucron-signer';
 //
-//const provider = new DefaultProvider({network: bsv.Networks.mainnet});
-//const signer = new NeucronSigner(provider);
-//let instance: Root;
+// const provider = new DefaultProvider({network: bsv.Networks.mainnet});
+// const signer = new NeucronSigner(provider);
+// let instance: Root;
 //
-//await signer.login('sales@timechainlabs.io', 'string');
-//await Root.loadArtifact();
+// await signer.login('sales@timechainlabs.io', 'string');
+// Root.loadArtifact();
 //
 //
-//export const actions = {
+// export const actions = {
 //    deploy: async ({request}) => {
 //        const [data] = await Promise.all([request.formData()]);
 //
@@ -48,8 +48,7 @@
 //        return {success: true, tx: callTx}
 //    },
 //
-//};
-//
+// };
 //
 //
 //

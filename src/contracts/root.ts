@@ -6,7 +6,7 @@ import {
 } from 'scrypt-ts'
 
 export class Root extends SmartContract {
-//    @prop()
+   @prop()
     square: bigint
 
     constructor(sq: bigint) {
@@ -14,7 +14,7 @@ export class Root extends SmartContract {
         this.square = sq
     }
 
-//    @method()
+   @method()
     public unlock(root: bigint) {
         assert(root * root == this.square, 'incorrect square-root')
     }

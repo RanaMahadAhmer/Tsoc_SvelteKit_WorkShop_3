@@ -9,7 +9,7 @@ import {
 } from 'scrypt-ts'
 
 export class Demo extends SmartContract {
-//    @prop()
+   @prop()
     hash: Sha256
 
     constructor(hash: Sha256) {
@@ -17,7 +17,7 @@ export class Demo extends SmartContract {
         this.hash = hash
     }
 
-//    method()
+   @method()
     public unlock(message: ByteString) {
         assert(sha256(message) == this.hash, 'incorrect hash')
     }
